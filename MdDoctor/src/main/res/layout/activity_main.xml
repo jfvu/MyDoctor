@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:id="@+id/ll_activity_main"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1"
+       />
+    <RadioGroup
+        android:id="@+id/rb_main_group"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:orientation="horizontal"
+        android:layout_marginTop="1px"
+        android:paddingTop="20px"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rb_main_home"
+            style="@style/rb_bottom_natv"
+            android:drawableTop="@drawable/selct_tab_home" />
+
+        <RadioButton
+            android:id="@+id/rb_main_search"
+            style="@style/rb_bottom_natv"
+            android:drawableTop="@drawable/selct_tab_friend" />
+
+        <RadioButton
+            android:id="@+id/rb_main_me"
+            style="@style/rb_bottom_natv"
+            android:drawableTop="@drawable/selct_tab_mine" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipanelonline.mobile.survey.ui.mine.DealActivity"
+    android:background="#E1E1E1">
+<LinearLayout
+    android:id="@+id/ll_statusbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personaldata_return"
+            android:padding="28px"
+            android:layout_marginLeft="4px"/>
+        <TextView
+            android:id="@+id/tv_titleshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册协议"
+            android:textSize="36px"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:layout_marginRight="12px"
+                android:layout_marginBottom="12px"
+                android:layout_marginTop="16px"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

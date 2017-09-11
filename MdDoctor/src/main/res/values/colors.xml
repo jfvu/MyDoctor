@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 基础颜色 -->
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray">#a7a5a5</color>
+
+    <!-- Home页面的颜色-->
+    <color name="home_line">#e6dddd</color>
+
+    <!-- 日志详情页颜色 -->
+    <color name="common_title">#f1efef</color>
+    <color name="comment_bg">#f5f0f0</color>
+    <color name="font_color">#898787</color>
+
+    <!-- chatUI 颜色 -->
+    <color name="text_title">#1b1b1b</color>
+    <color name="text_content">#818181</color>
+    <color name="text_sub">#919191</color>
+    <color name="bg_content">#f3f3f3</color>
+    <color name="divider_line">#d9d9d9</color>
+    <color name="text_hint">#c7c7c7</color>
+    <color name="text_black">#404040</color>
+
+</resources>

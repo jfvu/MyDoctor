@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="12px"
+    android:paddingTop="8px"
+    android:paddingBottom="8px"
+    android:background="#ffffff">
+
+    <ipanelonline.mobile.survey.view.CircleImageView
+        android:id="@+id/portrait"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:scaleType="fitCenter" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20px"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:textColor="@color/font_color"
+            android:layout_margin="4px"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/font_color"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="12px"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray"
+            android:layout_marginTop="40px"/>
+    </LinearLayout>
+
+</LinearLayout>

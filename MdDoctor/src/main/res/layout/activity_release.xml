@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:clickable="true"
+            android:text="取消"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布说说"
+            android:textColor="#383636"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32px"
+            android:clickable="true"
+            android:text="发送"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="@color/home_line" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/ed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1efef"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:paddingTop="32px"
+        android:paddingBottom="80px"
+        android:hint="这一刻，我想说..."
+        android:textSize="26px"
+        android:textColorHint="@color/gray" />
+    <TextView
+        android:id="@+id/tv_shownum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您输入了0个字符"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="24px"
+        android:paddingLeft="24px">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+
+    </LinearLayout>
+</LinearLayout>

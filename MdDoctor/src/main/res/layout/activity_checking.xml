@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.md.doctor.ipanelonline.md.doctor.ui.home.CheckingActivity">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="699px"
+        android:src="@drawable/check_center"
+        android:layout_marginTop="317.4px"
+        />
+<Button
+    android:id="@+id/but_next_check"
+    android:layout_width="300px"
+    android:layout_height="88px"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="88px"
+    android:background="@drawable/check_but"/>
+</RelativeLayout>

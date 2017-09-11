@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41px">
+
+
+<com.makeramen.roundedimageview.RoundedImageView
+    android:id="@+id/img_head"
+    android:layout_width="72px"
+    android:layout_height="72px"
+    android:src="@drawable/icon"
+    app:riv_corner_radius_top_right="16px"
+    app:riv_corner_radius_bottom_right="16px"
+    android:scaleType="fitXY"
+    />
+        <TextView
+            android:id="@+id/tv_equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhoneOnlioe"
+            android:layout_toRightOf="@+id/img_head"
+            android:layout_marginLeft="24px"
+            android:textColor="#3d3a3a"
+            android:textSize="26px"/>
+
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国,上海"
+            android:layout_toRightOf="@+id/img_head"
+            android:layout_marginLeft="24px"
+            android:textColor="#aeabab"
+            android:textSize="22px"
+            android:layout_marginTop="10px"
+            android:layout_below="@+id/tv_equipment"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30min"
+            android:layout_alignParentRight="true"
+            android:textColor="#aeabab"
+            android:textSize="24px"
+            android:layout_alignBaseline="@+id/tv_local"
+            android:layout_marginRight="24px"
+            android:layout_marginBottom="32px"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96px"
+            android:layout_marginRight="96px"
+            android:layout_marginTop="40px"
+            android:maxLength="120"
+            android:text="据中国航天科技集团官方消息称，我国从西昌卫星发射中西利用长征2号运载火箭发射卫星，据中国航天科技集团官方消息称，我国从西昌卫星发射中西利用长征2号运载火箭发射卫星"
+            android:textColor="#595757"
+            android:textSize="30px"
+            android:ellipsize="end"
+            android:maxLines="3"/>
+
+        <com.lzy.ninegrid.NineGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96px"
+            android:layout_marginRight="96px"
+            android:layout_marginTop="40px"
+            android:clickable="false"
+            android:focusable="false" />
+
+       <!-- <ListView
+            android:id="@+id/list_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96px"
+            android:layout_marginTop="20px" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96px"
+            android:layout_marginTop="20px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="120"
+                android:textColor="#414141"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="91.2px"
+                android:layout_toRightOf="@+id/tv_comment_name"
+                android:ellipsize="end"
+                android:maxLength="120"
+                android:textColor="#a4a4a4"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:textColor="#a4a4a4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="32px"
+        android:layout_marginBottom="64px">
+
+        <CheckBox
+            android:id="@+id/img_zan"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:button="@null"
+            android:background="@drawable/selct_diary_zan"
+            />
+
+        <TextView
+            android:id="@+id/tv_good_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:textColor="#2e2d2d"
+            android:layout_marginLeft="24px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="likes"
+            android:textSize="24px"
+            android:textColor="#2e2d2d"
+            android:layout_marginLeft="12px"/>
+
+        <ImageView
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:src="@drawable/diary_comment"
+            android:layout_marginLeft="48px"/>
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 comments"
+            android:textSize="24px"
+            android:textColor="#2e2d2d"
+            android:layout_marginLeft="24px"/>
+
+        <ImageView
+            android:id="@+id/img_zhuanfa"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:src="@drawable/diary_share"
+            android:layout_marginLeft="48px"/>
+
+    </LinearLayout>
+
+</LinearLayout>

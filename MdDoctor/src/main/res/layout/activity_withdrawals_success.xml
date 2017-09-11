@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现结束"
+            android:layout_centerInParent="true"
+            android:textSize="36px"/>
+
+        <TextView
+            android:id="@+id/tv_resh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="刷新"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32px"
+            android:textColor="#f2cc40"
+            android:textSize="36px"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="@color/home_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额"
+        android:textSize="50px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68px"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="112px"
+        android:gravity="center"
+        android:text="300.00"
+        android:textSize="70px"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f9a735"
+        android:layout_marginTop="68px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="@color/home_line"
+        android:layout_marginTop="64px"
+        android:layout_marginRight="24px"
+        android:layout_marginLeft="24px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px">
+
+        <ImageView
+            android:id="@+id/img_info"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:src="@drawable/tx_icon_success"/>
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_height="66px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:textSize="24px"
+            android:text="你已经成功提交了一笔500元(手续费1元，实际到账499元的提现申请，预计1-2工作日内到账)"/>
+    </LinearLayout>
+
+</LinearLayout>

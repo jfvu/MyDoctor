@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <ImageView
+            android:id="@+id/img_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PDR00003"
+            android:textColor="#3d3c3c"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#aba7a7" />
+
+    <TextView
+        android:id="@+id/tv_inquest_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55px"
+        android:layout_marginRight="55px"
+        android:layout_marginTop="80px"
+        android:textSize="36px"
+        android:maxLength="120"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textColor="#403e3e"
+        android:text="你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的你不仅仅是对于患者是最重要的，世界健康医疗的发展也是非常重要的....."/>
+    
+    <ImageView
+        android:layout_width="461px"
+        android:layout_height="461px"
+        android:src="@drawable/quest_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65px"/>
+
+    <LinearLayout
+        android:id="@+id/llay_in_quesrt"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:layout_marginRight="255px"
+        android:layout_marginLeft="255px"
+        android:layout_marginTop="102px"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="0dp"
+        android:clickable="true"
+        android:background="@drawable/quest_bt_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进入问卷"
+            android:textSize="36px"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:src="@drawable/quest_right"
+            android:layout_marginLeft="16px"/>
+    </LinearLayout>
+</LinearLayout>

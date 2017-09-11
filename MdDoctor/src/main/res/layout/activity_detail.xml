@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="#ffffff"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/img_back_activity_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personaldata_return"
+            android:padding="32px"
+            android:layout_marginLeft="0px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说说"
+            android:textColor="#333333"
+            android:textSize="32px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全文"
+            android:textSize="36px"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:layout_below="@id/rl_title_activity_detail"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42px"
+                android:layout_marginRight="42px"
+                android:layout_marginTop="40px"
+                android:textSize="24px"
+                android:lineSpacingExtra="22px"/>
+
+            <com.lzy.ninegrid.NineGridView
+                android:id="@+id/nine_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="42px"
+                android:layout_marginRight="42px"/>
+
+            <TextView
+                android:id="@+id/comment_info"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="热门评论"
+                android:textSize="28px"
+                android:gravity="center_vertical"
+                android:background="@color/common_title"
+                android:paddingLeft="20px"
+                android:layout_marginTop="60px"/>
+
+            <ListView
+                android:id="@+id/list_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:divider="#00000000"
+                android:scrollbars="none"
+                android:dividerHeight="0px"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray"
+                android:layout_marginTop="0px"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingTop="12px"
+                android:paddingBottom="12px"
+                >
+
+                <EditText
+                    android:id="@+id/ed_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="26px"
+                    android:hint="写评论"
+                    android:layout_marginLeft="8px"
+                    android:background="@drawable/detaila_bg"
+                    android:padding="20px" />
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="发送评论"
+                    android:textSize="28px"
+                    android:layout_margin="10px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nocomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:src="@drawable/detail_group"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="暂时没有评论，赶紧去抢沙发吧！"
+                    android:textColor="#b6b6b6"
+                    android:textSize="24px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

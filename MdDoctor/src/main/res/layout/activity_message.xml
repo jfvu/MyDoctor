@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_message"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"/>
+    <RelativeLayout
+        android:id="@+id/rl_title_activity_message"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff"
+        android:layout_below="@id/ll_statusbar_activity_message">
+        <ImageView
+            android:id="@+id/img_back_activity_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personaldata_return"
+            android:padding="28px"
+            android:layout_marginLeft="4px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="36px"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_message_activity_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_activity_message"
+        android:layout_marginTop="1px">
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ece9e9"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_centerInParent="true"
+            android:textSize="36px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#4DC699" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请绑定您的收款账户"
+            android:textSize="24px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="收款方式"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_fs"
+            android:textSize="24px"
+            android:text="微信"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="收款二维码"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="30px"/>
+
+        <ImageView
+            android:id="@+id/img_bind_wx_code"
+            android:layout_width="226px"
+            android:layout_height="226px"
+            android:src="@drawable/bind_wx"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="239px"
+            android:layout_marginBottom="24px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信收款微微码"
+            android:textSize="22px"
+            android:layout_marginLeft="276px"
+            android:layout_marginBottom="77px"
+            android:layout_marginTop="179px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_peo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="收款人"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/ed_bind_wx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_peo"
+            android:textSize="24px"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/shape_login_cur"
+            android:layout_marginLeft="48px"
+            android:hint="请输入姓名"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="验证码"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/ed_bind_wx_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_code"
+            android:textSize="24px"
+            android:hint="请输入验证码"
+            android:textCursorDrawable="@drawable/shape_login_cur"
+            android:background="@null"
+            android:maxLines="1"
+            android:layout_marginLeft="48px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5aefde"
+            android:text="获取验证码"
+            android:textSize="20px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_tv_wx_bg"
+            android:paddingTop="8px"
+            android:paddingBottom="8px"
+            android:paddingLeft="16px"
+            android:paddingRight="16px"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_tx_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/shape_btbg_tx_wx"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="26px"
+        android:layout_marginRight="24px"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:src="@drawable/bind_info_wx"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:layout_marginLeft="8px"
+            android:text="提示：请上传正确的微信收款二维码和真是的收款人姓名，否则将无法正常收款"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

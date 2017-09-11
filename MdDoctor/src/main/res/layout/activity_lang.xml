@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipanelonline.mobile.survey.ui.main.LangActivity"
+    android:background="#E1E1E1">
+<LinearLayout
+    android:id="@+id/ll_statusbar_activity_lang"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择语言"
+            android:textSize="36px"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <RelativeLayout
+            android:id="@+id/rl_return_activity_lang"
+            android:layout_width="70px"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="18px"
+                android:layout_height="36px"
+                android:src="@drawable/personaldata_return"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activity_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

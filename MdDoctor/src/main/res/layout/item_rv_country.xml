@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:id="@+id/ll_item_country">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_marginTop="2px">
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:textColor="#333333"
+        android:textSize="28px"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="18px"
+        android:layout_height="36px"
+        android:src="@drawable/choosecity_next"
+        android:layout_marginRight="24px"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        /*applicationId "com.md.doctor"*/
+        applicationId "ipanelonline.mobile.survey"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "f0d4d67dd88cae47a3392f25", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/rxjava.properties'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    provided files('libs/libammsdk.jar')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/MobCommons-2017.0801.1522.jar')
+    compile files('libs/MobTools-2017.0801.1522.jar')
+    compile files('libs/ShareSDK-Core-3.0.1.jar')
+    compile files('libs/ShareSDK-Facebook-3.0.1.jar')
+    compile files('libs/ShareSDK-QQ-3.0.1.jar')
+    compile files('libs/ShareSDK-QZone-3.0.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.0.1.jar')
+    compile files('libs/ShareSDK-Twitter-3.0.1.jar')
+    compile files('libs/ShareSDK-Wechat-3.0.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.0.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.0.1.jar')
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.jakewharton:butterknife:8.0.0'
+    compile 'com.jakewharton:butterknife-compiler:8.0.0'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.gyf.barlibrary:barlibrary:2.2.5'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.just.agentweb:agentweb:1.2.5'
+    compile 'com.lzy.widget:ninegridview:0.2.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.wenwenwen888:searchbox:1.0.0'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    compile 'com.google.code.gson:gson-parent:2.8.1'
+    compile 'com.jude:easyrecyclerview:4.2.3'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    testCompile 'junit:junit:4.12'
+    compile 'cn.jiguang.sdk:jpush:3.0.3'  // 此处以JPush 3.0.3 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.1'  // 此处以JCore 1.1.1 版本为例。
+    compile 'com.github.gittjy:LoadingDialog:1.0.2'
+}

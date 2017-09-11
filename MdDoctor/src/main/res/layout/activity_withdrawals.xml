@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现方式"
+            android:layout_centerInParent="true"
+            android:textSize="36px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#f5cb10" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_zfb"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="16px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tx_icon_zfb"/>
+
+        <TextView
+            android:id="@+id/tv_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:textSize="32px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="8px"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img_zfb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐支付宝用户使用"
+            android:textSize="24px"
+            android:layout_toRightOf="@+id/img_zfb"
+            android:layout_below="@+id/tv_zfb"
+            android:layout_marginBottom="20px"
+            />
+        
+        <RadioButton
+            android:id="@+id/rb_tx_zfb"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:button="@null"
+            android:background="@drawable/selct_tx_selct"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_wx"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="16px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tx_icon_wx"/>
+
+        <TextView
+            android:id="@+id/tv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:textSize="32px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="8px"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img_wx"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐微信用户使用"
+            android:textSize="24px"
+            android:layout_toRightOf="@+id/img_wx"
+            android:layout_below="@+id/tv_wx"
+            android:layout_marginBottom="20px"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_tx_wx"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:button="@null"
+            android:background="@drawable/selct_tx_selct"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_sj"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="16px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tx_icon_sj"/>
+
+        <TextView
+            android:id="@+id/tv_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机充值"
+            android:textSize="32px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="8px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img_sj"/>
+
+        <RadioButton
+            android:id="@+id/rb_tx_sj"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:button="@null"
+            android:background="@drawable/selct_tx_selct"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#e2e2e0"
+        android:layout_marginLeft="24px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_pay"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="16px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tx_icon_pay"/>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paypal"
+            android:textSize="32px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="8px"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_pay"/>
+
+        <RadioButton
+            android:id="@+id/rb_tx_pay"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:button="@null"
+            android:background="@drawable/selct_tx_selct"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_tx_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_btbg_tx"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"/>
+</LinearLayout>

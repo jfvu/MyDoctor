@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1px"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1" />
+
+    <ImageView
+        android:id="@+id/img_icon_messagelv"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/message_1" />
+
+    <TextView
+        android:id="@+id/tv_title_messagelv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96px"
+        android:layout_marginTop="24px"
+        android:text="系统通知"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_content_messagelv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96px"
+        android:layout_marginTop="56px"
+        android:text="尊敬的张先生，您的电话访问申请已经通过审核，请保持电话..."
+        android:textColor="#666666"
+        android:textSize="22px" />
+
+    <TextView
+        android:id="@+id/tv_time_messagelv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:text="2016-08-23"
+        android:textColor="#999999"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/img_read"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:background="@drawable/shape_red"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/tv_content_messagelv"
+        android:layout_marginRight="10px"/>
+</RelativeLayout>

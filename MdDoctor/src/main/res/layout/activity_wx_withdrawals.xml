@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零钱提现"
+            android:layout_centerInParent="true"
+            android:textSize="36px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/title"
+        android:background="#f5cb10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginLeft="24px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信收款码"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40px"
+                android:textSize="32px"/>
+
+            <ImageView
+                android:id="@+id/img_qr_code"
+                android:layout_width="226px"
+                android:layout_height="226px"
+                android:src="@drawable/tx_wx"
+                android:layout_marginLeft="48px"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:text="提现金额"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:textColor="@color/black"
+                android:text="￥"
+                android:layout_gravity="top"/>
+
+            <EditText
+                android:id="@+id/ed_tx_money"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@null"
+                android:layout_marginLeft="44px"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/shape_zfb_cur"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#e4e3e0"
+            android:layout_marginTop="6px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="40px">
+
+            <TextView
+                android:id="@+id/tv_tx_ye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零钱余额￥1234.5"
+                android:textSize="26px"/>
+
+            <TextView
+                android:id="@+id/tv_bt_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部提现"
+                android:clickable="true"
+                android:textColor="#7e9eb9"
+                android:textSize="26px"
+                android:layout_marginLeft="24px"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_tx_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提现"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:background="@drawable/selct_wx_fouse"
+            android:layout_marginTop="48px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="40px"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

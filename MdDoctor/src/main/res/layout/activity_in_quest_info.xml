@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CED4DB">
+    <LinearLayout
+        android:id="@+id/ll_statusbar_activity_account"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#ffffff"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/img_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PDR00003"
+            android:textColor="#3d3c3c"
+            android:textSize="36px" />
+        
+        <ImageView
+            android:id="@+id/img_questinfo_group"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:src="@drawable/quest_info_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1022px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="32px"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:src="@drawable/quest_info"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_con_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+                android:text="关于阿司匹林药物的调查"
+                android:textColor="#302f2f"
+                android:textSize="32px"/>
+
+            <TextView
+                android:id="@+id/tv_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:maxLength="100"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="据中国航天科技集团官网消息称，2017年6月19号我国在西昌发射的卫星，据中国航天科技集团官网消息称，2017年6月19号我国在西昌发射的卫星据中国航天科技集团官网消息称，2017年6月19号我国在西昌发射的卫星"
+                android:textColor="#302f2f"
+                android:textSize="32px"/>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:layout_marginLeft="40px"
+                android:text="编号：PRD00003"
+                android:textColor="#9e9d9d"
+                android:textSize="32px"/>
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:layout_marginLeft="40px"
+                android:text="开始：2017/7/6"
+                android:textColor="#9e9d9d"
+                android:textSize="32px"/>
+
+            <TextView
+                android:id="@+id/tv_end_tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:layout_marginLeft="40px"
+                android:text="结束：2017/7/18"
+                android:textColor="#9e9d9d"
+                android:textSize="32px"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:layout_marginLeft="40px"
+                android:text="时长：60min"
+                android:textColor="#9e9d9d"
+                android:textSize="32px"/>
+
+            <Button
+                android:id="@+id/bt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="96px"
+                android:text="立即参加"
+                android:textColor="@color/white"
+                android:background="@drawable/quset_info_bt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="195px"
+                android:layout_marginLeft="195px"
+                android:padding="0dp"
+                android:layout_marginTop="34px"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="256px"
+            android:layout_height="75px"
+            android:text="奖励：500￥"
+            android:background="@drawable/quest_info_left"
+            android:textColor="@color/white"
+            android:textSize="42px"
+            android:gravity="center"
+            android:layout_marginTop="44px"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

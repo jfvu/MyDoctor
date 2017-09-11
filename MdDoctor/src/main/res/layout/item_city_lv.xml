@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1"/>
+<TextView
+    android:id="@+id/tv_name_item_citylv"
+    android:text="中国"
+    android:layout_marginTop="28px"
+    android:layout_marginBottom="28px"
+    style="@style/personaldata_font_left"/>
+    <TextView
+        android:id="@+id/tv_phone_item_citylv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+86"
+        android:textSize="32px"
+        android:textColor="#999999"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24px"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
